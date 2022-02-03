@@ -32,6 +32,7 @@ export class PrintComponent implements OnInit {
 
   ngOnInit(): void {
     // this.print();
+    
   }
 
   print(){
