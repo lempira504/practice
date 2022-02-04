@@ -6,17 +6,23 @@ import { PrintComponent } from './components/print/print.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { BlockUiComponent } from './components/block-ui/block-ui.component';
+import { BlockUIModule } from 'ng-block-ui';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrintComponent,
-    DropdownComponent
+    DropdownComponent,
+    BlockUiComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    BlockUIModule.forRoot({
+      message: 'Default Message'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
